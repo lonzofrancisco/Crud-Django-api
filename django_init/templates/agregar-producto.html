@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+{% block title %} agregar producto {% endblock title %}
+{% block body %} 
+<div class="containerForm">
+
+<form method="post" class="form">
+    {% csrf_token %}
+    <table class="tablaForm">{{form.as_table }}</table>
+    <input type="submit" value="Agregar" class="formBtn">
+</div>
+</div>
+
+
+
+
+
+{% endblock body %}
